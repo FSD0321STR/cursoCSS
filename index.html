@@ -60,9 +60,103 @@
                     </dl>
                     
                 <h3>Margins, Borders, Paddings, Height, Width</h3>
+                    <p>Los <strong>elementos de bloque</strong> tienen unas propiedades relacionadas con el tamaño del elemento y el espaciado. Son:</p>
+                    
+                    <img src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png" />
+
+                    <h4>Height, width</h4>
+                    <p>Marcan el alto y el ancho del elemento</p>
+                    
+                    <h4>Margins</h4>
+                    <p>Marcan el espacio que debe existir entre el borde del elemento y los elementos adyacentes.</p>
+                    <p>Se especifica con las siguientes síntaxis</p>
+                    <pre>
+                        //notación específica
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 10px;
+
+                        //notación simplificada general
+                        margin: 10px;
+
+                        //notación simplificada específica
+                        margin: 10px 10px 10px 10px;
+                    </pre>
+
+                    <h4>Border</h4>
+                    <p>Marcan el grosor y el estilo del borde del elemento</p>
+                    <pre>
+                        //notación específica
+                        border-top: 10px solid red;
+                        border-right: 10px solid red;
+                        border-bottom: 10px solid red;
+                        border-left: 10px solid red;
+
+                        //notación simplificada general
+                        border: 10px solid red;
+                    </pre>
+
+                    <h4>Padding</h4>
+                    <p>Marcan el espacio que debe existir entre el borde del elemento y el propio elemento</p>
+                    <pre>
+                        //notación específica
+                        padding-top: 10px;
+                        padding-right: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+
+                        //notación simplificada general
+                        padding: 10px;
+
+                        //notación simplificada específica
+                        padding: 10px 10px 10px 10px;
+                    </pre>
                 <h3>Unidades</h3>
+                    <p>Los tamaños se pueden especificar de muchas maneras distintas. Las más usadas son:</p>
+                    <dl>
+                        <dt>px</dt>
+                        <dd>pixeles</dd>
+                        <dt>em</dt>
+                        <dd>relativo al tamaño de la letra "m"</dd>
+                        <dt>rem</dt>
+                        <dd>relativo al tamaño de la letra "m" del elemento raíz</dd>
+                        <dt>vw</dt>
+                        <dd>relativo al 1% del ancho del viewport</dd>
+                        <dt>vh</dt>
+                        <dd>relativo al 1% del alto del viewport</dd>
+                        <dt>%</dt>
+                        <dd>relativo al elemento padre</dd>
+                    </dl>
+
                 <h3>Colores</h3>
+                    <p>Se puede especificar los colores del elemento y de su fondo</p>
+                    <pre>
+                        color: #000000;
+                        background-color: #EEEEEE;
+                    </pre>
+                    <p>Los colores se suelen especificar en hexadecimal (hex) pero también se suele asignar:</p>
+                    <dl>
+                        <dt>por nombre</dt>
+                        <dd>red, blue, cyan, gold, darksalmon, …</dd>
+                        <dt>RGB o RGBA</dt>
+                        <dd>rgb(255, 0, 0, 0.3)</dd>
+                        <dt>HSL o HSLA</dt>
+                        <dd>hsl(120, 100%, 50%,0.3);</dd>
+                    </dl>
+
                 <h3>Textos</h3>
+                    <p>CSS facilita estilar muchos aspectos de la tipografía</p>
+                    <h4>font-family</h4>
+                    <h4>font-size</h4>
+                    <h4>font-weight</h4>
+                    <h4>font-stretch</h4>
+                    <h4>text-align</h4>
+                    <h4>text-decoration</h4>
+                    <h4>text-indent</h4>
+                    <h4>text-justify</h4>
+                    <h4>text-transform</h4>
+
                 <h3>Listas</h3>
                 <h3>Pseudo clases</h3>
                 <h3>Pseudo elementos</h3>

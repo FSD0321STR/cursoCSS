@@ -4,44 +4,79 @@
         <title>Clase de CSS - Nuclio Digital School - Full Stack Developer Streaming</title>
     </head>
     <body>
-        <h1>Clase de CSS</h1>
-        <ul class="menu">
-            <li>
-                <a href="#basic">CSS Básico</a>
-            </li>
-            <li>
-                <a href="#layouts">Layouts</a>
-            </li>
-            <li>
-                <a href="#advanced">CSS Avanzado</a>
-            </li>
-        </ul>
-        <h2 id="basic">CSS Básico</h2>
-            <h3>Tipos de elementos</h3>
-                <p>Existen dos tipos básicos de elementos en <strong>HTML</strong>:</p>
-                <dl>
-                    <dt>Elementos de bloque</dt>
-                        <dd>Son elementos que ocupan todo el ancho, empezando siempre en una linea nueva. Pueden contener márgenes. Ejemplos: p, div, ul, ol, li, dl, dt, dd, section, table, header, footer, hr, …</p></dd>
-                    <dt>Elementos en linea</dt>
-                        <dd>Son elementos que no empiezan en una nueva linea, solo ocupando el ancho que necesitan. Ejemplos: span, strong, em, input, select, textarea, …</dd>
-                </dl>
-            <h3>Contenedores</h3>
-                <p>Nos ayudan a organizar nuestro HTML</p>
-                
-            <h3>Margins, Borders, Paddings, Height, Width</h3>
-            <h3>Unidades</h3>
-            <h3>Colores</h3>
-            <h3>Textos</h3>
-            <h3>Listas</h3>
-            <h3>Pseudo clases</h3>
-            <h3>Pseudo elementos</h3>
-            <h3>Tablas</h3>
-        <h2 id="layouts">Layouts</h2>
-            <h3>Grids</h3>
-            <h3>Flexbox</h3>
-        <h2 id="advanced">CSS Avanzado</h2>
-            <h3>Animaciones</h3>
-            <h3>BEM</h3>
-            <h3>SASS / SCSS</h3>
+        <header>
+            <h1>Clase de CSS</h1>
+            <ul class="menu">
+                <li>
+                    <a href="#basic">CSS Básico</a>
+                </li>
+                <li>
+                    <a href="#layouts">Layouts</a>
+                </li>
+                <li>
+                    <a href="#advanced">CSS Avanzado</a>
+                </li>
+            </ul>
+        </header>
+        
+        <main>
+            <h2 id="basic">CSS Básico</h2>
+
+                <h3>Tipos de elementos</h3>
+                    <p>Existen dos tipos básicos de elementos en <strong>HTML</strong>:</p>
+                    <dl>
+                        <dt>Elementos de bloque</dt>
+                            <dd>Son elementos que ocupan todo el ancho, empezando siempre en una linea nueva. Pueden contener márgenes. Ejemplos: <abbr title="párrafo">p</abbr>, <abbr title="divisor">div</abbr>, <abbr title="lista desordenada">ul</abbr>, <abbr title="lista ordenada">ol</abbr>, <abbr title="elemento de lista">li</abbr>, <abbr title="lista descriptiva">dl</abbr>, <abbr title="Título de item de lista descriptiva">dt</abbr>, <abbr title="descripción de item de lista descriptiva">dd</abbr>, <abbr title="contenedor de sección">section</abbr>, <abbr title="Tabla">table</abbr>, <abbr title="contenedor de cabecera">header</abbr>, <abbr title="contenedor de pie">footer</abbr>, <abbr title="división horizontal">hr</abbr>, …</p></dd>
+                        <dt>Elementos en linea</dt>
+                            <dd>Son elementos que no empiezan en una nueva linea, solo ocupando el ancho que necesitan. Ejemplos: <abbr title="contenedor genérico en linea">span</abbr>, <abbr title="elemento de fuerte importancia">strong</abbr>, <abbr title="elemento con énfasis">em</abbr>, <abbr title="entrada en formulario">input</abbr>, <abbr title="selector en formulario">select</abbr>, <abbr title="area de texto en formulario">textarea</abbr>, …</dd>
+                    </dl>
+
+                <h3>Contenedores</h3>
+                    <p>Nos ayudan a organizar nuestro HTML</p>
+                    <h4>Específicos</h4>
+                    <dl>
+                        <dt>header</dt>
+                        <dd>Contenedor de bloque para la cabecera</dd>
+                        <dt>main</dt>
+                        <dd>Contenedor de bloque para el contenido</dd>
+                        <dt>footer</dt>
+                        <dd>Contenedor de bloque para el pie</dd>
+                        <dt>nav</dt>
+                        <dd>Contenedor de bloque para la navegación</dd>
+                        <dt>article</dt>
+                        <dd>Contenedor de bloque para un artículo (muy recomendable para blogs)</dd>
+                        <dt>aside</dt>
+                        <dd>Contenedor de bloque para contenido adicional al contenido principal</dd>
+                        <dt>section</dt>
+                        <dd>Contenedor de bloque para una sección de la página</dd>
+                    </dl>
+                    
+                    <h4>Genéricos</h4>
+                    <dl>
+                        <dt>div</dt>
+                        <dd>Contenedor genérico de bloque</dd>
+                        <dt>span</dt>
+                        <dd>Contenedor genérico en linea</dd>
+                    </dl>
+                    
+                <h3>Margins, Borders, Paddings, Height, Width</h3>
+                <h3>Unidades</h3>
+                <h3>Colores</h3>
+                <h3>Textos</h3>
+                <h3>Listas</h3>
+                <h3>Pseudo clases</h3>
+                <h3>Pseudo elementos</h3>
+                <h3>Tablas</h3>
+            <h2 id="layouts">Layouts</h2>
+                <h3>Grids</h3>
+                <h3>Flexbox</h3>
+            <h2 id="advanced">CSS Avanzado</h2>
+                <h3>Animaciones</h3>
+                <h3>BEM</h3>
+                <h3>SASS / SCSS</h3>
+        </main>
+        <footer>
+            Página para aprender HTML y CSS
+        </footer>
     </body>
 </html>

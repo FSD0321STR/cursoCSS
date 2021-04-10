@@ -147,19 +147,110 @@
 
                 <h3>Textos</h3>
                     <p>CSS facilita estilar muchos aspectos de la tipografía</p>
+
                     <h4>font-family</h4>
+                    <p>Establece la tipografia del elemento</p>
+                    <pre>font-family: helvetica, arial, sans-serif;</pre>
+
                     <h4>font-size</h4>
+                    <p>Establece el tamaño de la fuente</p>
+                    <pre>
+                        font-size: 14px;
+                        font-size: 2rem;
+                    </pre>
+
                     <h4>font-weight</h4>
+                    <p>Establece el grosor de la fuente</p>
+                    <pre>
+                        font-weight: bold;
+                        font-weight: 800;
+                    </pre>
+
                     <h4>font-stretch</h4>
+                    <p>Establece el ancho de la fuente</p>
+                    <pre>
+                        font-stretch: condensed;
+                        font-stretch: expanded;
+                    </pre>
+
                     <h4>text-align</h4>
+                    <p>Establece la alineación del texto dentro del elemento de bloque</p>
+                    <pre>
+                        text-align: center;
+                        text-align: justify;
+                    </pre>
+
                     <h4>text-decoration</h4>
+                    <p>Establece la decoración del texto</p>
+                    <pre>
+                        text-decoration: line-through;
+                        text-decoration: underline;
+                        text-decoration: underline overline dotted red;
+                    </pre>
+
                     <h4>text-indent</h4>
-                    <h4>text-justify</h4>
+                    <p>Establece el espaciado de la primera linea de texto</p>
+                    <pre>
+                        text-indent: 5rem;
+                    </pre>
+
                     <h4>text-transform</h4>
+                    <p>Transforma el texto</p>
+                    <pre>
+                        text-transform: uppercase;
+                        text-transform: lowercase;
+                        text-transform: capitalize;
+                    </pre>
 
                 <h3>Listas</h3>
+                    <p></p>
+                    <h4>list-style-type</h4>
+                    <pre>list-style-type: square</pre>
+                    <h4>list-style-position</h4>
+                    <pre>list-style-position: inside</pre>
+                    <h4>list-style-image</h4>
+                    <pre>list-style-image: url("dot.png")</pre>
+
                 <h3>Pseudo clases</h3>
+                <p>Sirven para diferenciar estados de un element. Se marcan con el símbolo ":"</p>
+                <dl>
+                    <dt>:link</dt>
+                    <dd>Enlace no visitado</dd>
+                    <dt>:visited</dt>
+                    <dd>Enlace visitado</dd>
+                    <dt>:hover</dt>
+                    <dd>Mouse encima del elemento</dd>
+                    <dt>:active</dt>
+                    <dd>Enlace seleccionado</dd>
+                    <dt>:focus</dt>
+                    <dd>Elemento con focus</dd>
+                    <dt>:first-child</dt>
+                    <dd>Primer elemento hijo</dd>
+                    <dt>:last-child</dt>
+                    <dd>Último elemento hijo</dd>
+                    <dt>:nth-child(n)</dt>
+                    <dd>Elemento "n" hijo</dd>
+                </dl>
                 <h3>Pseudo elementos</h3>
+                <p>Sirven para estilar la primera linea o la primera letra de un elemento, o para añadir contenido antes o después del elemento. Se marcan con el símbolo "::"</p>
+                <pre>
+                    p::first-letter {
+                        color: #ff0000;
+                        font-size: xx-large;
+                        }
+                      
+                    p::first-line {
+                        color: #0000ff;
+                        font-variant: small-caps;
+                        }
+                    h1::before {
+                        content: url(smiley.gif);
+                        }
+                    h1::after {
+                        content: url(smiley.gif);
+                        }
+                </pre>
+
                 <h3>Tablas</h3>
             <h2 id="layouts">Layouts</h2>
                 <h3>Grids</h3>

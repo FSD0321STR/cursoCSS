@@ -221,7 +221,7 @@
                     </pre>
 
                     <h4>line-height</h4>
-                    <p>Establece el interlienado</p>
+                    <p>Establece el interlineado</p>
                     <pre>
                         line-height:1.4;
                     </pre>
@@ -236,97 +236,117 @@
                     <pre>list-style-image: url("dot.png")</pre>
 
                 <h3>Pseudo clases</h3>
-                <p>Sirven para diferenciar estados de un element. Se marcan con el símbolo ":"</p>
-                <dl>
-                    <dt>:link</dt>
-                    <dd>Enlace no visitado</dd>
-                    <dt>:visited</dt>
-                    <dd>Enlace visitado</dd>
-                    <dt>:hover</dt>
-                    <dd>Mouse encima del elemento</dd>
-                    <dt>:active</dt>
-                    <dd>Enlace seleccionado</dd>
-                    <dt>:focus</dt>
-                    <dd>Elemento con focus</dd>
-                    <dt>:first-child</dt>
-                    <dd>Primer elemento hijo</dd>
-                    <dt>:last-child</dt>
-                    <dd>Último elemento hijo</dd>
-                    <dt>:nth-child(n)</dt>
-                    <dd>Elemento "n" hijo</dd>
-                </dl>
+                    <p>Sirven para diferenciar estados de un element. Se marcan con el símbolo ":"</p>
+                    <dl>
+                        <dt>:link</dt>
+                        <dd>Enlace no visitado</dd>
+                        <dt>:visited</dt>
+                        <dd>Enlace visitado</dd>
+                        <dt>:hover</dt>
+                        <dd>Mouse encima del elemento</dd>
+                        <dt>:active</dt>
+                        <dd>Enlace seleccionado</dd>
+                        <dt>:focus</dt>
+                        <dd>Elemento con focus</dd>
+                        <dt>:first-child</dt>
+                        <dd>Primer elemento hijo</dd>
+                        <dt>:last-child</dt>
+                        <dd>Último elemento hijo</dd>
+                        <dt>:nth-child(n)</dt>
+                        <dd>Elemento "n" hijo</dd>
+                    </dl>
                 <h3>Pseudo elementos</h3>
-                <p>Sirven para estilar la primera linea o la primera letra de un elemento, o para añadir contenido antes o después del elemento. Se marcan con el símbolo "::"</p>
-                <pre>
-                    p::first-letter {
-                        color: #ff0000;
-                        font-size: xx-large;
-                        }
-                      
-                    p::first-line {
-                        color: #0000ff;
-                        font-variant: small-caps;
-                        }
-                    h1::before {
-                        content: url(smiley.gif);
-                        }
-                    h1::after {
-                        content: url(smiley.gif);
-                        }
-                </pre>
+                    <p>Sirven para estilar la primera linea o la primera letra de un elemento, o para añadir contenido antes o después del elemento. Se marcan con el símbolo "::"</p>
+                    <pre>
+                        p::first-letter {
+                            color: #ff0000;
+                            font-size: xx-large;
+                            }
+                        
+                        p::first-line {
+                            color: #0000ff;
+                            font-variant: small-caps;
+                            }
+                        h1::before {
+                            content: url(smiley.gif);
+                            }
+                        h1::after {
+                            content: url(smiley.gif);
+                            }
+                    </pre>
 
                 <h3>Tablas</h3>
-                <p>Las tablas tablas pueden tener tres secciones que pueden servir para diferenciar estilos (thead, tbody, tfooter)</p>
-                <p>Además podemos marcar una celda como cabecera mediante th</p>
+                    <p>Las tablas tablas pueden tener tres secciones que pueden servir para diferenciar estilos (thead, tbody, tfooter)</p>
+                    <p>Además podemos marcar una celda como cabecera mediante th</p>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <td>thead 1</td>
-                            <td>thead 2</td>
-                            <td>thead 3</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>th 1</th>
-                            <td>td 1</td>
-                            <td>td 2</td>
-                        </tr>
-                        <tr>
-                            <th>th 1</th>
-                            <td>td 1</td>
-                            <td>td 2</td>
-                        </tr>
-                        <tr>
-                            <th>th 1</th>
-                            <td>td 1</td>
-                            <td>td 2</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">
-                                Ejemplo de tabla
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <p>En realidad podemos convertir cualquier elemento en una table mediante la propiedad "display"</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>thead 1</td>
+                                <td>thead 2</td>
+                                <td>thead 3</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>th 1</th>
+                                <td>td 1</td>
+                                <td>td 2</td>
+                            </tr>
+                            <tr>
+                                <th>th 1</th>
+                                <td>td 1</td>
+                                <td>td 2</td>
+                            </tr>
+                            <tr>
+                                <th>th 1</th>
+                                <td>td 1</td>
+                                <td>td 2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">
+                                    Ejemplo de tabla
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p>En realidad podemos convertir cualquier elemento en una table mediante la propiedad "display"</p>
+                    <dl>
+                        <dt>display: table</dt>
+                        <dd>Convierte el elemento en un contenedor de tabla</dd>
+                        <dt>display: table-row</dt>
+                        <dd>Convierte el elemento en una fila de la tabla</dd>
+                        <dt>display: table-cell</dt>
+                        <dd>Convierte el elemento en una celda de la tabla</dd>
+                        <dt>display: table-header-group</dt>
+                        <dd>Convierte el elemento en un contenedor "thead"</dd>
+                        <dt>display: table-row-group</dt>
+                        <dd>Convierte el elemento en un contenedor "tbody"</dd>
+                        <dt>display: table-footer-group</dt>
+                        <dd>Convierte el elemento en un contenedor "tfoot"</dd>
+                    </dl>
+                
+                <h3>Posiciones</h3>
+                <p>Podemos modificar la posición de un elemento mediante la propiedad "position"</p>
                 <dl>
-                    <dt>display: table</dt>
-                    <dd>Convierte el elemento en un contenedor de tabla</dd>
-                    <dt>display: table-row</dt>
-                    <dd>Convierte el elemento en una fila de la tabla</dd>
-                    <dt>display: table-cell</dt>
-                    <dd>Convierte el elemento en una celda de la tabla</dd>
-                    <dt>display: table-header-group</dt>
-                    <dd>Convierte el elemento en un contenedor "thead"</dd>
-                    <dt>display: table-row-group</dt>
-                    <dd>Convierte el elemento en un contenedor "tbody"</dd>
-                    <dt>display: table-footer-group</dt>
-                    <dd>Convierte el elemento en un contenedor "tfoot"</dd>
+                    <dt>static</dt>
+                    <dd>Valor por defecto, el objeto se situa en el orden que le pertoca</dd>
+                    <dt>absolute</dt>
+                    <dd>El elemento queda flotante y podemos situarlo donde deseemos.</dd>
+                    <dt>fixed</dt>
+                    <dd>El elemento quedará situado relativamente a la ventana del navegador (modales)</dd>
+                    <dt>sticky</dt>
+                    <dd>El elemento quedará situado basado en el scroll del usuario</dd>
                 </dl>
+                <pre>
+                    position: static;
+                    position: absolute;
+                    position: fixed;
+                    position: sticky;
+                </pre>
+
 
             <h2 id="layouts">Layouts</h2>
                 <h3>Grids</h3>

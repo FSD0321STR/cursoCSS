@@ -30,6 +30,11 @@
                         <dt>Elementos en linea</dt>
                             <dd>Son elementos que no empiezan en una nueva linea, solo ocupando el ancho que necesitan. Ejemplos: <abbr title="contenedor genérico en linea">span</abbr>, <abbr title="elemento de fuerte importancia">strong</abbr>, <abbr title="elemento con énfasis">em</abbr>, <abbr title="entrada en formulario">input</abbr>, <abbr title="selector en formulario">select</abbr>, <abbr title="area de texto en formulario">textarea</abbr>, …</dd>
                     </dl>
+                    <p>Podemos forzar el cambio de comportamiento de un elemento mediante la propiedad display</p>
+                    <pre>
+                        display:block;
+                        display:inline;
+                    </pre>
 
                 <h3>Contenedores</h3>
                     <p>Nos ayudan a organizar nuestro HTML</p>
@@ -161,7 +166,9 @@
 
                     <h4>font-family</h4>
                     <p>Establece la tipografia del elemento</p>
-                    <pre>font-family: helvetica, arial, sans-serif;</pre>
+                    <pre>
+                        font-family: helvetica, arial, sans-serif;
+                    </pre>
 
                     <h4>font-size</h4>
                     <p>Establece el tamaño de la fuente</p>
@@ -269,6 +276,58 @@
                 </pre>
 
                 <h3>Tablas</h3>
+                <p>Las tablas tablas pueden tener tres secciones que pueden servir para diferenciar estilos (thead, tbody, tfooter)</p>
+                <p>Además podemos marcar una celda como cabecera mediante th</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>thead 1</td>
+                            <td>thead 2</td>
+                            <td>thead 3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>th 1</th>
+                            <td>td 1</td>
+                            <td>td 2</td>
+                        </tr>
+                        <tr>
+                            <th>th 1</th>
+                            <td>td 1</td>
+                            <td>td 2</td>
+                        </tr>
+                        <tr>
+                            <th>th 1</th>
+                            <td>td 1</td>
+                            <td>td 2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                Ejemplo de tabla
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <p>En realidad podemos convertir cualquier elemento en una table mediante la propiedad "display"</p>
+                <dl>
+                    <dt>display: table</dt>
+                    <dd>Convierte el elemento en un contenedor de tabla</dd>
+                    <dt>display: table-row</dt>
+                    <dd>Convierte el elemento en una fila de la tabla</dd>
+                    <dt>display: table-cell</dt>
+                    <dd>Convierte el elemento en una celda de la tabla</dd>
+                    <dt>display: table-header-group</dt>
+                    <dd>Convierte el elemento en un contenedor "thead"</dd>
+                    <dt>display: table-row-group</dt>
+                    <dd>Convierte el elemento en un contenedor "tbody"</dd>
+                    <dt>display: table-footer-group</dt>
+                    <dd>Convierte el elemento en un contenedor "tfoot"</dd>
+                </dl>
+
             <h2 id="layouts">Layouts</h2>
                 <h3>Grids</h3>
                 <h3>Flexbox</h3>

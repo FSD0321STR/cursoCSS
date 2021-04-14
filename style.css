@@ -1,0 +1,44 @@
+body {
+    color: #FFFFFF;
+    background-color: #0A1846;
+    margin: 2rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4 {
+    color: #FCB700;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 1rem 0;
+}
+
+ul li:last-child {
+    border:0;
+}
+
+table td {
+    border:1px solid #FFFFFF;
+}
+
+table thead td, table tbody th {
+    background-color:#FFFFFF;
+    color: #0A1846;
+    font-weight:bold;
+}
+
+table tbody td:nth-child(3) {
+    font-size:0.5rem;
+}
+
+table tfoot td {
+    background-color: rgba(255,255,255,0.4)
+}

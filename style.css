@@ -1,0 +1,14 @@
+:root{
+    --background-color: cornsilk;
+    --main-font-color: coral;
+    --secondary-font-color: teal;
+}
+
+body{
+    background-color: var(--background-color);  
+    color: var(--secondary-font-color)
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--main-font-color)
+}

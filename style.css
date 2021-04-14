@@ -15,14 +15,14 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width:100%;
+}
+
 ul li {
     list-style-type: none;
     border-bottom: 1px solid #FFFFFF;
     padding: 1rem 0;
-}
-
-ul li:last-child {
-    border:0;
 }
 
 table td {
@@ -41,4 +41,48 @@ table tbody td:nth-child(3) {
 
 table tfoot td {
     background-color: rgba(255,255,255,0.4)
+}
+
+pre {
+    background-color: #000000;
+    border-left: 5px solid #FCB700;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+    border: 1px solid #FFFFFF;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container div {
+    border: 1px solid #FFFFFF;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+@media screen and (max-width: 419px) {
+    ul li:last-child {
+        border:0;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    nav ul {
+        flex-direction:row;
+    }
 }

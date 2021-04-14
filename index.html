@@ -392,13 +392,148 @@
 
             <h2 id="layouts">Layouts</h2>
                 <h3>Grids</h3>
+                    <p>Los grids permiten controlar la posición de elementos dentro de una cuadricula respeto ejes X e Y</p>
+                    <div class="grid-container">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
+                        <div class="grid-item item10">10</div>
+                        <div class="grid-item item11">11</div>
+                        <div class="grid-item item12">12</div>
+                    </div>
+
+                    <pre>
+                        /* RELATIVOS AL CONTENEDOR */
+                        display: grid; /* definir grid */
+                        grid-template-columns: auto auto auto; /* definir columnas */
+                        gap: 1rem; /* define espacio entre columnas */
+                        justify-content: space-evenly; /* definir alineación de los items del grid (space-evenly, space-around, space-between, center, start, end); */
+                        align-content: center; /* definir alineación del contenido de cada item (center, space-evenly, space-around, space-between, start, end) */
+
+                        /* RELATIVOS A LOS ELEMENTOS */
+                        grid-column: 1 / 5; /* Empieza en la columna 1 y finaliza en la columna anterior a la 5 */
+                        grid-column: 2 / span 3; /* Empieza en la columna 2 y ocupa 3 columnas */
+                        grid-row: 1 / 4; /* Empieza en la fila 1 y finaliza en la fila 4 */
+                        grid-area: 1 / 2 / 3 / 4; /* Empieza en fila 1, columna 2 y finaliza antes de fila 3 y columna 4 */
+                    </pre>
+
                 <h3>Flexbox</h3>
+                    <p>Flexbox permite controlar la posición de una serie de elementos, pero solo en una eje</p>
+                    <div class="flex-container">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                    </div>
+
+                    <pre>
+                        display: flex; /* inicializa el contenedor para flex */
+
+                        /* RELATIVOS AL CONTENEDOR */
+                        flex-direction: /* dirección de los elementos (column, colum-reverse, row, row-reverse) */
+                        flex-wrap /* indica si el contenedor debe poder saltar de linea o no (wrap, no-wrap) */
+                        justify-content /* propiedad para alinear los items de flex (center, flex-start, flex-end, space-around, space-between) */
+                        align-items /* propiedad para alinear verticalmente los items de flex (center, flex-start, flex-end, stretch, baseline) */
+
+                        /*RELATIVOS A LOS ITEMS */
+                        order: 3 /* cambia el orden del elemento */
+                        flex-grow: 8 /* indica que el elemento crecerá 8 veces más rápido que el resto de elementos
+                        flex-shrink: 0 /* indica el valor que queremos que se reduzca el elemento
+                        flex-basis: 200px /* indica el ancho inicial que debe tener el elemento */
+                    </pre>
+
+
             <h2 id="advanced">CSS Avanzado</h2>
                 <h3>Media queries</h3>
+                    <p>Nos permiten definir diferentes declaraciones CSS según el tamaño o resolución de los dispositivos.</p>
+                    <pre>
+                        @media not|only mediatype and (expressions) {
+                            Código CSS
+                        }
+                        
+                        @media screen and (min-width: 480px) {
+                            body {
+                                background-color: lightgreen;
+                            }
+                        }
+                    </pre>
+
                 <h3>Variables</h3>
+                    <p>Permiten especificar variables en CSS como si estuvieramos programando</p>
+                    <pre>
+                        :root {
+                            --primary-color: #1e90ff;
+                            --secondary-color: #ffffff;
+                        }
+
+                        body {
+                            background-color: var(--primary-color);
+                        }
+
+                        /* modificar variables en media queries */
+                        .container {
+                            --fontsize: 25px;
+                        }
+
+                        @media screen and (min-width: 450px) {
+                            .container {
+                              --fontsize: 50px;
+                            }
+                        }
+                    </pre>
+
                 <h3>Animaciones</h3>
-                <h3>BEM</h3>
+                    <p>Con CSS podemos crear animaciones de los elementos HTML. Para ello primero debemos de definir los keyframes de la animación</p>
+                    <pre>
+                        @keyframes example {
+                            from {background-color: red;}
+                            to {background-color: green;}
+                        }
+
+                        @keyframes example {
+                            0%   {background-color: red;}
+                            25%  {background-color: yellow;}
+                            50%  {background-color: blue;}
+                            100% {background-color: green;}
+                          }
+                    </pre>
+
+                    <p>Y a continuación podemos aplicarlo a cualquier elemento mediante estas declaraciones:</p>
+                    <pre>
+                        div {
+                            animation-name: example; /* ligado al indicador de la animación ("example") */
+                            animation-duration: 4s; /* duración de la animación */
+                          }
+                    </pre>
+
+                    <p>Las animaciones tienen una serie de propiedades que permiten controlarlas</p>
+                    <pre>
+                        animation-delay: 2s /* Esperar 2s para iniciar la animación */
+                        animation-iteration-count: 3 /* Repetir la animación 3 veces (puede ser "infinite") */
+                        animation-direction: reverse /* Permite controlar la dirección de la animación (normal, reverse, alternate, altermate-reverse) */
+                        animation-timing-function: ease /* Permite controlar la aceleración de la animación (linear, ease, ease-in, ease-out, ease-in-out) */ 
+                        animation-fill-mode: forwards /* Permite definir el último estado después de ejecutarse la animación (none, forwards, backwards, both) */
+                    </pre>
+                
+
                 <h3>SASS / SCSS</h3>
+
+                <h3>BEM</h3>
+                
         </main>
         <footer>
             Página para aprender HTML y CSS

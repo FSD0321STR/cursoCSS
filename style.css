@@ -12,3 +12,17 @@ body{
 h1, h2, h3, h4, h5{
     color: var(--main-font-color)
 }
+
+nav ul li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+}
+
+nav ul li:first-child{
+    border-bottom: none;
+}
+
+nav ul li:last-child{
+    border-bottom: none;
+}
+

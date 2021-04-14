@@ -3,21 +3,22 @@
     <head>
         <link href="style.css" rel="stylesheet" />
         <title>Clase de CSS - Nuclio Digital School - Full Stack Developer Streaming</title>
+        
     </head>
     <body class="generalFlow">
         <header class="headerFlow ">
-            <nav style="color: black;">
+            <nav style="text-decoration: none;">
                 
-                    
-                <a href="#basic">CSS básico</a>    
-                <a href="#layouts">layouts</a>       
-                <a href="#advanced">CSS avanzado</a>
+                <a href="http://www.w3schools.com/css/" target="_blank"><img id="logo" src="logoCSS3.png" height="110" weight="110"/> </a>
+                <a style="color : black " href="#basic">CSS básico</a>    
+                <a style="color : black" href="#layouts">layouts</a>       
+                <a style="color : black" href="#advanced">CSS avanzado</a>
                     
                 
             </nav>
             
         </header>
-        <h1>Clase de CSS</h1>
+        <h1 class="hFlow ">Clase de CSS</h1>
         <main>
             <h2 id="basic">CSS Básico</h2>
 
@@ -35,7 +36,7 @@
                         display:inline;
                     </pre>
 
-                <h3>Contenedores</h3>
+                <h3 class="hFlow">Contenedores</h3>
                     <p>Nos ayudan a organizar nuestro HTML</p>
                     <h4>Específicos</h4>
                     <dl>
@@ -55,7 +56,7 @@
                         <dd>Contenedor de bloque para una sección de la página</dd>
                     </dl>
                     
-                    <h4>Genéricos</h4>
+                    <h4 class="hFlow">Genéricos</h4>
                     <dl>
                         <dt>div</dt>
                         <dd>Contenedor genérico de bloque</dd>
@@ -63,7 +64,7 @@
                         <dd>Contenedor genérico en linea</dd>
                     </dl>
                 
-                <h3>Selectores</h3>
+                <h3 class="hFlow">Selectores</h3>
                 <pre>
                     #id
                     .class
@@ -74,15 +75,15 @@
                     p[atributo=valor] //todos los p que tienen el valor indicado en el atributo especificado
                 </pre>
 
-                <h3>Margins, Borders, Paddings, Height, Width</h3>
+                <h3 class="hFlow">Margins, Borders, Paddings, Height, Width</h3>
                     <p>Los <strong>elementos de bloque</strong> tienen unas propiedades relacionadas con el tamaño del elemento y el espaciado. Son:</p>
                     
-                    <img src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png" />
+                    <img id="img" src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png" />
 
-                    <h4>Height, width</h4>
+                    <h4 class="hFlow">Height, width</h4>
                     <p>Marcan el alto y el ancho del elemento</p>
                     
-                    <h4>Margins</h4>
+                    <h4 class="hFlow">Margins</h4>
                     <p>Marcan el espacio que debe existir entre el borde del elemento y los elementos adyacentes.</p>
                     <p>Se especifica con las siguientes síntaxis</p>
                     <pre>
@@ -99,7 +100,7 @@
                         margin: 10px 10px 10px 10px;
                     </pre>
 
-                    <h4>Border</h4>
+                    <h4 class="hFlow">Border</h4>
                     <p>Marcan el grosor y el estilo del borde del elemento</p>
                     <pre>
                         //notación específica
@@ -116,7 +117,7 @@
                         border-top-left-radius: 5px;
                     </pre>
 
-                    <h4>Padding</h4>
+                    <h4 class="hFlow">Padding</h4>
                     <p>Marcan el espacio que debe existir entre el borde del elemento y el propio elemento</p>
                     <pre>
                         //notación específica
@@ -131,7 +132,7 @@
                         //notación simplificada específica
                         padding: 10px 10px 10px 10px;
                     </pre>
-                <h3>Unidades</h3>
+                <h3 class="hFlow" >Unidades</h3>
                     <p>Los tamaños se pueden especificar de muchas maneras distintas. Las más usadas son:</p>
                     <dl>
                         <dt>px</dt>
@@ -148,7 +149,7 @@
                         <dd>relativo al elemento padre</dd>
                     </dl>
 
-                <h3>Colores</h3>
+                <h3 class="hFlow" >Colores</h3>
                     <p>Se puede especificar los colores del elemento y de su fondo</p>
                     <pre>
                         color: #000000;
@@ -164,44 +165,44 @@
                         <dd>hsl(120, 100%, 50%,0.3);</dd>
                     </dl>
 
-                <h3>Textos</h3>
+                <h3 class="hFlow">Textos</h3>
                     <p>CSS facilita estilar muchos aspectos de la tipografía</p>
 
-                    <h4>font-family</h4>
+                    <h4 class="hFlow">font-family</h4>
                     <p>Establece la tipografia del elemento</p>
                     <pre>
                         font-family: helvetica, arial, sans-serif;
                     </pre>
 
-                    <h4>font-size</h4>
+                    <h4 class="hFlow">font-size</h4>
                     <p>Establece el tamaño de la fuente</p>
                     <pre>
                         font-size: 14px;
                         font-size: 2rem;
                     </pre>
 
-                    <h4>font-weight</h4>
+                    <h4 class="hFlow">font-weight</h4>
                     <p>Establece el grosor de la fuente</p>
                     <pre>
                         font-weight: bold;
                         font-weight: 800;
                     </pre>
 
-                    <h4>font-stretch</h4>
+                    <h4 class="hFlow">font-stretch</h4>
                     <p>Establece el ancho de la fuente</p>
                     <pre>
                         font-stretch: condensed;
                         font-stretch: expanded;
                     </pre>
 
-                    <h4>text-align</h4>
+                    <h4 class="hFlow">text-align</h4>
                     <p>Establece la alineación del texto dentro del elemento de bloque</p>
                     <pre>
                         text-align: center;
                         text-align: justify;
                     </pre>
 
-                    <h4>text-decoration</h4>
+                    <h4 class="hFlow">text-decoration</h4>
                     <p>Establece la decoración del texto</p>
                     <pre>
                         text-decoration: line-through;
@@ -209,13 +210,13 @@
                         text-decoration: underline overline dotted red;
                     </pre>
 
-                    <h4>text-indent</h4>
+                    <h4 class="hFlow">text-indent</h4>
                     <p>Establece el espaciado de la primera linea de texto</p>
                     <pre>
                         text-indent: 5rem;
                     </pre>
 
-                    <h4>text-transform</h4>
+                    <h4 class="hFlow">text-transform</h4>
                     <p>Transforma el texto</p>
                     <pre>
                         text-transform: uppercase;
@@ -223,13 +224,13 @@
                         text-transform: capitalize;
                     </pre>
 
-                    <h4>line-height</h4>
+                    <h4 class="hFlow">line-height</h4>
                     <p>Establece el interlineado</p>
                     <pre>
                         line-height:1.4;
                     </pre>
 
-                <h3>Listas</h3>
+                <h3 class="hFlow">Listas</h3>
                     <p></p>
                     <h4>list-style-type</h4>
                     <pre>list-style-type: square</pre>
@@ -238,7 +239,7 @@
                     <h4>list-style-image</h4>
                     <pre>list-style-image: url("dot.png")</pre>
 
-                <h3>Pseudo clases</h3>
+                <h3 class="hFlow" >Pseudo clases</h3>
                     <p>Sirven para diferenciar estados de un element. Se marcan con el símbolo ":"</p>
                     <dl>
                         <dt>:link</dt>
@@ -258,7 +259,7 @@
                         <dt>:nth-child(n)</dt>
                         <dd>Elemento "n" hijo</dd>
                     </dl>
-                <h3>Pseudo elementos</h3>
+                <h3 class="hFlow">Pseudo elementos</h3>
                     <p>Sirven para estilar la primera linea o la primera letra de un elemento, o para añadir contenido antes o después del elemento. Se marcan con el símbolo "::"</p>
                     <pre>
                         p::first-letter {
@@ -278,7 +279,7 @@
                             }
                     </pre>
 
-                <h3>Tablas</h3>
+                <h3 class="hFlow">Tablas</h3>
                     <p>Las tablas tablas pueden tener tres secciones que pueden servir para diferenciar estilos (thead, tbody, tfooter)</p>
                     <p>Además podemos marcar una celda como cabecera mediante th</p>
 
@@ -331,7 +332,7 @@
                         <dd>Convierte el elemento en un contenedor "tfoot"</dd>
                     </dl>
                 
-                <h3>Posiciones</h3>
+                <h3 class="hFlow">Posiciones</h3>
                 <p>Podemos modificar la posición de un elemento mediante la propiedad "position"</p>
                 <dl>
                     <dt>static</dt>

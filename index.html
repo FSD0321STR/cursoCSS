@@ -2,10 +2,11 @@
 <html>
     <head>
         <title>Clase de CSS - Nuclio Digital School - Full Stack Developer Streaming</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>Clase de CSS</h1>
+            <h1 class="destacado">Clase de CSS</h1>
 
             <nav>
                 <ul class="menu">
@@ -24,8 +25,7 @@
         </header>
         
         <main>
-            <h2 id="basic">CSS Básico</h2>
-
+            <h2 id="basic" class="destacado">CSS Básico</h2>
                 <h3>Tipos de elementos</h3>
                     <p>Existen dos tipos básicos de elementos en <strong>HTML</strong>:</p>
                     <dl>
@@ -235,7 +235,11 @@
                     </pre>
 
                 <h3>Listas</h3>
-                    <p></p>
+                    <ul>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                    </ul>
                     <h4>list-style-type</h4>
                     <pre>list-style-type: square</pre>
                     <h4>list-style-position</h4>
@@ -290,6 +294,36 @@
                     <table>
                         <thead>
                             <tr>
+                                <td>Header - Celda 1</td>
+                                <td>Header - Celda 2</td>
+                                <td>Header - Celda 3</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Fila 1 - Celda 1</th>
+                                <td>Fila 1 - Celda 2</td>
+                                <td>Fila 1 - Celda 3</td>
+                            </tr>
+                            <tr>
+                                <th>Fila 2 - Celda 1</th>
+                                <td>Fila 2 - Celda 2</td>
+                                <td>Fila 2 - Celda 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Footer - Celda 1</td>
+                                <td>Footer - Celda 2</td>
+                                <td>Footer - Celda 3</td>
+                            </tr>
+                        </tfoot>
+                        
+                    </table>
+<!---
+                    <table>
+                        <thead>
+                            <tr>
                                 <td>thead 1</td>
                                 <td>thead 2</td>
                                 <td>thead 3</td>
@@ -319,7 +353,7 @@
                                 </td>
                             </tr>
                         </tfoot>
-                    </table>
+                    </table>-->
                     <p>En realidad podemos convertir cualquier elemento en una table mediante la propiedad "display"</p>
                     <dl>
                         <dt>display: table</dt>
@@ -361,6 +395,7 @@
                 <h3>Flexbox</h3>
             <h2 id="advanced">CSS Avanzado</h2>
                 <h3>Media queries</h3>
+                <h3>Variables</h3>
                 <h3>Animaciones</h3>
                 <h3>BEM</h3>
                 <h3>SASS / SCSS</h3>

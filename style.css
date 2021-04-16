@@ -1,18 +1,36 @@
+:root{
+    --text-color: #8E8E8E;
+    --background-color: #FFFFFF;
+} 
+
 body {
-    color: #FFFFFF;
-    background-color: #0A1846;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 2rem;
     font-family: sans-serif;
     font-size: 1.2rem;
 }
 
-h1, h2, h3, h4 {
-    color: #FCB700;
+header {
+    background-color: #d7192d ;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+h2, h3, h4 {
+    color: #d7192d;
 }
 
 a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+a:hover {
+    color: #FCD100;
 }
 
 img {
@@ -21,8 +39,8 @@ img {
 
 ul li {
     list-style-type: none;
-    border-bottom: 1px solid #FFFFFF;
-    padding: 1rem 0;
+    border-bottom: none;
+    padding: 1rem 0;;
 }
 
 table td {
@@ -73,16 +91,33 @@ nav ul {
     gap: 1rem;
 }
 
+.hamburguer-menu {
+    color: #FFFFFF;
+}
 
 
-@media screen and (max-width: 419px) {
+/* MOBILE */
+@media screen and (max-width: 435px) {
     ul li:last-child {
         border:0;
     }
+
+    nav ul li:first-child {
+        display: block;
+        border: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 430px) {
     nav ul {
         flex-direction:row;
+    }
+
+    nav ul li:first-child {
+        display: none;
     }
 }

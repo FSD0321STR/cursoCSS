@@ -1,17 +1,27 @@
-.generalFlow {
+
+/*variables */
+:root {
+    --primary-color:  rgb(255, 74, 0);
+    --secondary-color: blanchedalmond;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family:  Helvetica;
-    background-color: rgb(255, 74, 0);
+    background-color: var(--primary-color);
     font-size: 16px;
     text-indent: 2rem ;
     font-weight: bold;
-    color: blanchedalmond;
-    cursor: crosshair;
+    color:var(--secondary-color) ;
+    cursor: cell ;
     
 }
 
 
-/*podría ser id*/
-.headerFlow {
+
+header {
     display: block;
     margin: 10 px,5px,10px,5px;
     background-color: RGBA(190, 182, 190,0.3);
@@ -24,21 +34,48 @@
     letter-spacing: 0,85rem;
     /*opacity: 0.5;*/
     cursor:crosshair;   
+    border-radius: 1rem;
       
 }
 
-.hFlow {
-    font-size: 3rem;
+h1 {
+    font-size: 3.5rem;
     font-style: underline;
-    letter-spacing : -0.35rem;
+    letter-spacing : -0.4rem;
     padding: 2rem;
     color: black;
     margin: 10px,5px,15px,5px ;
     text-align: center;
     text-decoration: underline;
-
-    
+        
 }
+
+
+
+
+p,dt,dd {
+    color: rgb(243, 235, 235) ;
+    font-size: 1.25rem;
+       
+}
+
+pre {
+    background-color: darkblue;
+    margin-right: 3.75rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    cursor:help;
+
+}
+
+thead, tbody, tfoot {
+    display:grid;
+    grid-template-columns: auto,auto;
+    position: sticky;
+
+
+}
+
  
     #logo {
         float: left;
@@ -48,6 +85,69 @@
         float: center;
     }
 
-    h::before {
+    h3::before {
         content: "🐱‍👤 ";
     }
+
+
+    .grid-itemitem1 {
+        display: grid;
+        grid-template-columns:auto;
+        
+    }
+
+@media screen and (max-width:480px) {
+    /*☰*/    
+}
+/*ANIMACIONES*/
+h1:hover{
+    animation: zoomjump 2.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    color: var(--secondary-color);
+}
+/*pre:hover {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }*/
+
+
+
+  @keyframes zoomjump {
+    0% {
+      -webkit-transform: scale(0.25);
+              transform: scale(0.25);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:1024px) {
+    
+}
+
+
+@media only screen and (max-width:768px) {
+    body {padding: 0 0.5rem;}
+
+   
+
+
+}
+
+
+@media only screen and (max-width:485px) {
+
+}

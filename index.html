@@ -2,11 +2,15 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet" />
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clase de CSS - Nuclio Digital School - Full Stack Developer Streaming</title>
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
-    <body class="generalFlow">
-        <header class="headerFlow ">
+    <body>
+        <header>
             <nav style="text-decoration: none;">
                 
                 <a href="http://www.w3schools.com/css/" target="_blank"><img id="logo" src="logoCSS3.png" height="110" weight="110"/> </a>
@@ -18,10 +22,9 @@
             </nav>
             
         </header>
-        <h1 class="hFlow ">Clase de CSS</h1>
+        <h1>Clase de CSS</h1>
         <main>
-            <h2 id="basic">CSS Básico</h2>
-
+            <h2 id="basic" class="destacado">CSS Básico</h2>
                 <h3>Tipos de elementos</h3>
                     <p>Existen dos tipos básicos de elementos en <strong>HTML</strong>:</p>
                     <dl>
@@ -36,7 +39,7 @@
                         display:inline;
                     </pre>
 
-                <h3 class="hFlow">Contenedores</h3>
+                <h3>Contenedores</h3>
                     <p>Nos ayudan a organizar nuestro HTML</p>
                     <h4>Específicos</h4>
                     <dl>
@@ -56,7 +59,7 @@
                         <dd>Contenedor de bloque para una sección de la página</dd>
                     </dl>
                     
-                    <h4 class="hFlow">Genéricos</h4>
+                    <h4>Genéricos</h4>
                     <dl>
                         <dt>div</dt>
                         <dd>Contenedor genérico de bloque</dd>
@@ -64,7 +67,7 @@
                         <dd>Contenedor genérico en linea</dd>
                     </dl>
                 
-                <h3 class="hFlow">Selectores</h3>
+                <h3>Selectores</h3>
                 <pre>
                     #id
                     .class
@@ -75,15 +78,15 @@
                     p[atributo=valor] //todos los p que tienen el valor indicado en el atributo especificado
                 </pre>
 
-                <h3 class="hFlow">Margins, Borders, Paddings, Height, Width</h3>
+                <h3>Margins, Borders, Paddings, Height, Width</h3>
                     <p>Los <strong>elementos de bloque</strong> tienen unas propiedades relacionadas con el tamaño del elemento y el espaciado. Son:</p>
                     
                     <img id="img" src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png" />
 
-                    <h4 class="hFlow">Height, width</h4>
+                    <h4>Height, width</h4>
                     <p>Marcan el alto y el ancho del elemento</p>
                     
-                    <h4 class="hFlow">Margins</h4>
+                    <h4>Margins</h4>
                     <p>Marcan el espacio que debe existir entre el borde del elemento y los elementos adyacentes.</p>
                     <p>Se especifica con las siguientes síntaxis</p>
                     <pre>
@@ -100,7 +103,7 @@
                         margin: 10px 10px 10px 10px;
                     </pre>
 
-                    <h4 class="hFlow">Border</h4>
+                    <h4>Border</h4>
                     <p>Marcan el grosor y el estilo del borde del elemento</p>
                     <pre>
                         //notación específica
@@ -117,7 +120,7 @@
                         border-top-left-radius: 5px;
                     </pre>
 
-                    <h4 class="hFlow">Padding</h4>
+                    <h4>Padding</h4>
                     <p>Marcan el espacio que debe existir entre el borde del elemento y el propio elemento</p>
                     <pre>
                         //notación específica
@@ -132,7 +135,7 @@
                         //notación simplificada específica
                         padding: 10px 10px 10px 10px;
                     </pre>
-                <h3 class="hFlow" >Unidades</h3>
+                <h3>class="hFlow" >Unidades</h3>
                     <p>Los tamaños se pueden especificar de muchas maneras distintas. Las más usadas son:</p>
                     <dl>
                         <dt>px</dt>
@@ -149,7 +152,7 @@
                         <dd>relativo al elemento padre</dd>
                     </dl>
 
-                <h3 class="hFlow" >Colores</h3>
+                <h3>Colores</h3>
                     <p>Se puede especificar los colores del elemento y de su fondo</p>
                     <pre>
                         color: #000000;
@@ -165,16 +168,16 @@
                         <dd>hsl(120, 100%, 50%,0.3);</dd>
                     </dl>
 
-                <h3 class="hFlow">Textos</h3>
+                <h3>Textos</h3>
                     <p>CSS facilita estilar muchos aspectos de la tipografía</p>
 
-                    <h4 class="hFlow">font-family</h4>
+                    <h4>font-family</h4>
                     <p>Establece la tipografia del elemento</p>
                     <pre>
                         font-family: helvetica, arial, sans-serif;
                     </pre>
 
-                    <h4 class="hFlow">font-size</h4>
+                    <h4>font-size</h4>
                     <p>Establece el tamaño de la fuente</p>
                     <pre>
                         font-size: 14px;
@@ -188,21 +191,21 @@
                         font-weight: 800;
                     </pre>
 
-                    <h4 class="hFlow">font-stretch</h4>
+                    <h4>font-stretch</h4>
                     <p>Establece el ancho de la fuente</p>
                     <pre>
                         font-stretch: condensed;
                         font-stretch: expanded;
                     </pre>
 
-                    <h4 class="hFlow">text-align</h4>
+                    <h4>text-align</h4>
                     <p>Establece la alineación del texto dentro del elemento de bloque</p>
                     <pre>
                         text-align: center;
                         text-align: justify;
                     </pre>
 
-                    <h4 class="hFlow">text-decoration</h4>
+                    <h4>text-decoration</h4>
                     <p>Establece la decoración del texto</p>
                     <pre>
                         text-decoration: line-through;
@@ -210,13 +213,13 @@
                         text-decoration: underline overline dotted red;
                     </pre>
 
-                    <h4 class="hFlow">text-indent</h4>
+                    <h4>text-indent</h4>
                     <p>Establece el espaciado de la primera linea de texto</p>
                     <pre>
                         text-indent: 5rem;
                     </pre>
 
-                    <h4 class="hFlow">text-transform</h4>
+                    <h4>text-transform</h4>
                     <p>Transforma el texto</p>
                     <pre>
                         text-transform: uppercase;
@@ -224,14 +227,18 @@
                         text-transform: capitalize;
                     </pre>
 
-                    <h4 class="hFlow">line-height</h4>
+                    <h4 >line-height</h4>
                     <p>Establece el interlineado</p>
                     <pre>
                         line-height:1.4;
                     </pre>
 
-                <h3 class="hFlow">Listas</h3>
-                    <p></p>
+                <h3>Listas</h3>
+                    <ul>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                    </ul>
                     <h4>list-style-type</h4>
                     <pre>list-style-type: square</pre>
                     <h4>list-style-position</h4>
@@ -239,7 +246,7 @@
                     <h4>list-style-image</h4>
                     <pre>list-style-image: url("dot.png")</pre>
 
-                <h3 class="hFlow" >Pseudo clases</h3>
+                <h3>Pseudo clases</h3>
                     <p>Sirven para diferenciar estados de un element. Se marcan con el símbolo ":"</p>
                     <dl>
                         <dt>:link</dt>
@@ -259,7 +266,7 @@
                         <dt>:nth-child(n)</dt>
                         <dd>Elemento "n" hijo</dd>
                     </dl>
-                <h3 class="hFlow">Pseudo elementos</h3>
+                <h3>Pseudo elementos</h3>
                     <p>Sirven para estilar la primera linea o la primera letra de un elemento, o para añadir contenido antes o después del elemento. Se marcan con el símbolo "::"</p>
                     <pre>
                         p::first-letter {
@@ -279,10 +286,40 @@
                             }
                     </pre>
 
-                <h3 class="hFlow">Tablas</h3>
+                <h3>Tablas</h3>
                     <p>Las tablas tablas pueden tener tres secciones que pueden servir para diferenciar estilos (thead, tbody, tfooter)</p>
                     <p>Además podemos marcar una celda como cabecera mediante th</p>
 
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Header - Celda 1</td>
+                                <td>Header - Celda 2</td>
+                                <td>Header - Celda 3</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Fila 1 - Celda 1</th>
+                                <td>Fila 1 - Celda 2</td>
+                                <td>Fila 1 - Celda 3</td>
+                            </tr>
+                            <tr>
+                                <th>Fila 2 - Celda 1</th>
+                                <td>Fila 2 - Celda 2</td>
+                                <td>Fila 2 - Celda 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Footer - Celda 1</td>
+                                <td>Footer - Celda 2</td>
+                                <td>Footer - Celda 3</td>
+                            </tr>
+                        </tfoot>
+                        
+                    </table>
+<!---
                     <table>
                         <thead>
                             <tr>
@@ -315,7 +352,7 @@
                                 </td>
                             </tr>
                         </tfoot>
-                    </table>
+                    </table>-->
                     <p>En realidad podemos convertir cualquier elemento en una table mediante la propiedad "display"</p>
                     <dl>
                         <dt>display: table</dt>
@@ -354,12 +391,148 @@
 
             <h2 id="layouts">Layouts</h2>
                 <h3>Grids</h3>
+                    <p>Los grids permiten controlar la posición de elementos dentro de una cuadricula respeto ejes X e Y</p>
+                    <div class="grid-container">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                    </div>
+
+                    <pre>
+                        /* RELATIVOS AL CONTENEDOR */
+                        display: grid; /* definir grid */
+                        grid-template-columns: auto auto auto; /* definir columnas */
+                        gap: 1rem; /* define espacio entre columnas */
+                        justify-content: space-evenly; /* definir alineación de los items del grid (space-evenly, space-around, space-between, center, start, end); */
+                        align-content: center; /* definir alineación del contenido de cada item (center, space-evenly, space-around, space-between, start, end) */
+
+                        /* RELATIVOS A LOS ELEMENTOS */
+                        grid-column: 1 / 5; /* Empieza en la columna 1 y finaliza en la columna anterior a la 5 */
+                        grid-column: 2 / span 3; /* Empieza en la columna 2 y ocupa 3 columnas */
+                        grid-row: 1 / 4; /* Empieza en la fila 1 y finaliza en la fila 4 */
+                        grid-area: 1 / 2 / 3 / 4; /* Empieza en fila 1, columna 2 y finaliza antes de fila 3 y columna 4 */
+                    </pre>
+
                 <h3>Flexbox</h3>
+                    <p>Flexbox permite controlar la posición de una serie de elementos, pero solo en una eje</p>
+                    <div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                    </div>
+
+                    <pre>
+                        display: flex; /* inicializa el contenedor para flex */
+
+                        /* RELATIVOS AL CONTENEDOR */
+                        flex-direction: /* dirección de los elementos (column, colum-reverse, row, row-reverse) */
+                        flex-wrap /* indica si el contenedor debe poder saltar de linea o no (wrap, no-wrap) */
+                        justify-content /* propiedad para alinear los items de flex (center, flex-start, flex-end, space-around, space-between) */
+                        align-items /* propiedad para alinear verticalmente los items de flex (center, flex-start, flex-end, stretch, baseline) */
+
+                        /*RELATIVOS A LOS ITEMS */
+                        order: 3 /* cambia el orden del elemento */
+                        flex-grow: 8 /* indica que el elemento crecerá 8 veces más rápido que el resto de elementos
+                        flex-shrink: 0 /* indica el valor que queremos que se reduzca el elemento
+                        flex-basis: 200px /* indica el ancho inicial que debe tener el elemento */
+                    </pre>
+
+
             <h2 id="advanced">CSS Avanzado</h2>
                 <h3>Media queries</h3>
+                    <p>Nos permiten definir diferentes declaraciones CSS según el tamaño o resolución de los dispositivos.</p>
+                    <pre>
+                        @media not|only mediatype and (expressions) {
+                            Código CSS
+                        }
+                        
+                        @media screen and (min-width: 480px) {
+                            body {
+                                background-color: lightgreen;
+                            }
+                        }
+                    </pre>
+
+                <h3>Variables</h3>
+                    <p>Permiten especificar variables en CSS como si estuvieramos programando</p>
+                    <pre>
+                        :root {
+                            --primary-color: #1e90ff;
+                            --secondary-color: #ffffff;
+                        }
+
+                        body {
+                            background-color: var(--primary-color);
+                        }
+
+                        /* modificar variables en media queries */
+                        .container {
+                            --fontsize: 25px;
+                        }
+
+                        @media screen and (min-width: 450px) {
+                            .container {
+                              --fontsize: 50px;
+                            }
+                        }
+                    </pre>
+
                 <h3>Animaciones</h3>
-                <h3>BEM</h3>
+                    <p>Con CSS podemos crear animaciones de los elementos HTML. Para ello primero debemos de definir los keyframes de la animación</p>
+                    <pre>
+                        @keyframes example {
+                            from {background-color: red;}
+                            to {background-color: green;}
+                        }
+
+                        @keyframes example {
+                            0%   {background-color: red;}
+                            25%  {background-color: yellow;}
+                            50%  {background-color: blue;}
+                            100% {background-color: green;}
+                          }
+                    </pre>
+
+                    <p>Y a continuación podemos aplicarlo a cualquier elemento mediante estas declaraciones:</p>
+                    <pre>
+                        div {
+                            animation-name: example; /* ligado al indicador de la animación ("example") */
+                            animation-duration: 4s; /* duración de la animación */
+                          }
+                    </pre>
+
+                    <p>Las animaciones tienen una serie de propiedades que permiten controlarlas</p>
+                    <pre>
+                        animation-delay: 2s /* Esperar 2s para iniciar la animación */
+                        animation-iteration-count: 3 /* Repetir la animación 3 veces (puede ser "infinite") */
+                        animation-direction: reverse /* Permite controlar la dirección de la animación (normal, reverse, alternate, altermate-reverse) */
+                        animation-timing-function: ease /* Permite controlar la aceleración de la animación (linear, ease, ease-in, ease-out, ease-in-out) */ 
+                        animation-fill-mode: forwards /* Permite definir el último estado después de ejecutarse la animación (none, forwards, backwards, both) */
+                    </pre>
+                
+
                 <h3>SASS / SCSS</h3>
+
+                <h3>BEM</h3>
+                
         </main>
         <footer>
             Página para aprender HTML y CSS

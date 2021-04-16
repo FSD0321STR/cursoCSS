@@ -540,6 +540,39 @@
                         animation-timing-function: ease /* Permite controlar la aceleración de la animación (linear, ease, ease-in, ease-out, ease-in-out) */ 
                         animation-fill-mode: forwards /* Permite definir el último estado después de ejecutarse la animación (none, forwards, backwards, both) */
                     </pre>
+
+                    <h3>BEM</h3>
+                    <p>Se trata de un estándard de nomenclatura</p>
+                    <img src="http://getbem.com/assets/github_captions.jpg">
+                    <pre class="html">
+                        &lt;button class="button"&gt;
+                            Normal button
+                        &lt;/button&gt;
+                        &lt;button class="button button--state-success"&gt;
+                            Success button
+                        &lt;/button&gt;
+                        &lt;button class="button button--state-danger"&gt;
+                            Danger button
+                        &lt;/button&gt;
+                    </pre>
+                    <pre class="css">
+                        .button {
+                            display: inline-block;
+                            border-radius: 3px;
+                            padding: 7px 12px;
+                            border: 1px solid #D5D5D5;
+                            background-image: linear-gradient(#EEE, #DDD);
+                            font: 700 13px/18px Helvetica, arial;
+                        }
+                        .button--state-success {
+                            color: #FFF;
+                            background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+                            border-color: #4A993E;
+                        }
+                        .button--state-danger {
+                            color: #900;
+                        }
+                    </pre>
                 
 
                 <h3>SASS / SCSS</h3>
@@ -788,40 +821,6 @@
                                 border-color: yellow;
                             }
                         </pre>
-
-
-                <h3>BEM</h3>
-                    <p>Se trata de un estándard de nomenclatura</p>
-                    <img src="http://getbem.com/assets/github_captions.jpg">
-                    <pre class="html">
-                        &lt;button class="button"&gt;
-                            Normal button
-                        &lt;/button&gt;
-                        &lt;button class="button button--state-success"&gt;
-                            Success button
-                        &lt;/button&gt;
-                        &lt;button class="button button--state-danger"&gt;
-                            Danger button
-                        &lt;/button&gt;
-                    </pre>
-                    <pre class="css">
-                        .button {
-                            display: inline-block;
-                            border-radius: 3px;
-                            padding: 7px 12px;
-                            border: 1px solid #D5D5D5;
-                            background-image: linear-gradient(#EEE, #DDD);
-                            font: 700 13px/18px Helvetica, arial;
-                        }
-                        .button--state-success {
-                            color: #FFF;
-                            background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
-                            border-color: #4A993E;
-                        }
-                        .button--state-danger {
-                            color: #900;
-                        }
-                    </pre>
                 
         </main>
         <footer>

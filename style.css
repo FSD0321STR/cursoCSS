@@ -150,6 +150,10 @@ pre {
     overflow-x: scroll;
 }
 
+pre.html::before {
+    content:"HTML\A"
+}
+
 pre.css::before {
     content:"CSS\A"
 }

@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clase de CSS - Nuclio Digital School - Full Stack Developer Streaming</title>
+<<<<<<< HEAD
         <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+=======
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+>>>>>>> main
     </head>
     <body>
+        <div id="animate">U</div>
         <header>
+<<<<<<< HEAD
             <nav style="text-decoration: none;">
                 
                 <a href="http://www.w3schools.com/css/" target="_blank"><img id="logo" src="logoCSS3.png" height="110" weight="110"/> </a>
@@ -19,6 +27,25 @@
                 <a style="color : black" href="#advanced">CSS avanzado</a>
                     
                 
+=======
+            <h1 class="destacado">Clase de CSS</h1>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="">☰</a>
+                    </li>
+                    <li>
+                        <a href="#basic">CSS Básico</a>
+                    </li>
+                    <li>
+                        <a href="#layouts">Layouts</a>
+                    </li>
+                    <li>
+                        <a href="#advanced">CSS Avanzado</a>
+                    </li>
+                </ul>
+>>>>>>> main
             </nav>
             
         </header>
@@ -390,6 +417,12 @@
 
 
             <h2 id="layouts">Layouts</h2>
+                <div class="left">
+                    left
+                </div>
+                <div class="right">
+                    right
+                </div>
                 <h3>Grids</h3>
                     <p>Los grids permiten controlar la posición de elementos dentro de una cuadricula respeto ejes X e Y</p>
                     <div class="grid-container">
@@ -471,7 +504,7 @@
                         }
                     </pre>
 
-                <h3>Variables</h3>
+                <h3>Variables (Custom properties)</h3>
                     <p>Permiten especificar variables en CSS como si estuvieramos programando</p>
                     <pre>
                         :root {
@@ -523,15 +556,291 @@
                     <pre>
                         animation-delay: 2s /* Esperar 2s para iniciar la animación */
                         animation-iteration-count: 3 /* Repetir la animación 3 veces (puede ser "infinite") */
-                        animation-direction: reverse /* Permite controlar la dirección de la animación (normal, reverse, alternate, altermate-reverse) */
+                        animation-direction: reverse /* Permite controlar la dirección de la animación (normal, reverse, alternate, alternate-reverse) */
                         animation-timing-function: ease /* Permite controlar la aceleración de la animación (linear, ease, ease-in, ease-out, ease-in-out) */ 
                         animation-fill-mode: forwards /* Permite definir el último estado después de ejecutarse la animación (none, forwards, backwards, both) */
+                    </pre>
+
+                    <h3>BEM</h3>
+                    <p>Se trata de un estándard de nomenclatura</p>
+                    <img src="http://getbem.com/assets/github_captions.jpg">
+                    <pre class="html">
+                        &lt;button class="button"&gt;
+                            Normal button
+                        &lt;/button&gt;
+                        &lt;button class="button button--state-success"&gt;
+                            Success button
+                        &lt;/button&gt;
+                        &lt;button class="button button--state-danger"&gt;
+                            Danger button
+                        &lt;/button&gt;
+                    </pre>
+                    <pre class="css">
+                        .button {
+                            display: inline-block;
+                            border-radius: 3px;
+                            padding: 7px 12px;
+                            border: 1px solid #D5D5D5;
+                            background-image: linear-gradient(#EEE, #DDD);
+                            font: 700 13px/18px Helvetica, arial;
+                        }
+                        .button--state-success {
+                            color: #FFF;
+                            background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+                            border-color: #4A993E;
+                        }
+                        .button--state-danger {
+                            color: #900;
+                        }
                     </pre>
                 
 
                 <h3>SASS / SCSS</h3>
+                    <p>SASS es un preprocesador de CSS. Esto significa que es un lenguaje de programación que obtiene como resultado un CSS, facilitando la creación. Tiene dos maneras para hacer las declaraciones: SASS y SCSS, el más popular es SCSS por ser más cercano al CSS. Los archivos tienen extensión ".scss" .</p>
+                    <h4>Instalación</h4>
+                    <pre>
+                        npm install -D sass
+                    </pre>
+                    <h4>Características</h4>
+                        <h5>Variables</h5>
+                        <p>Antes de que el concepto de variables esté disponible en CSS (custom properties), SASS ofrecía esta característica desde su inicio. Ahora está quedando en desuso debido a que es más fácil manipular las custom properties, por ejemplo, desde JS.</p>
+                        <pre class="scss">
+                        $font-stack:    Helvetica, sans-serif;
+                        $primary-color: #333;
 
-                <h3>BEM</h3>
+                        body {
+                            font: 100% $font-stack;
+                            color: $primary-color;
+                        }
+                        </pre>
+                        <pre class="css">
+                        body {
+                            font: 100% Helvetica, sans-serif;
+                            color: #333;
+                            }
+                        </pre>
+
+                        <h5>Nesting</h5>
+                        <p>Permite anidar las declaraciones, sean SCSS o CSS.</p>
+                        <pre class="scss">
+                            nav {
+                                ul {
+                                  margin: 0;
+                                  padding: 0;
+                                  list-style: none;
+                                }
+                              
+                                li { display: inline-block; }
+                              
+                                a {
+                                  display: block;
+                                  padding: 6px 12px;
+                                  text-decoration: none;
+                                }
+                              }
+                        </pre>
+                        <pre class="css">
+                            nav ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                              }
+                              nav li {
+                                display: inline-block;
+                              }
+                              nav a {
+                                display: block;
+                                padding: 6px 12px;
+                                text-decoration: none;
+                              }
+                        </pre>
+
+                        <h5>Parciales</h5>
+                        <p>Se pueden crear ficheros parciales para poder trabajar mejor y haciendo que se compilen todos bajo un mismo archivo css. Los archivos parciales se nombran con un underscore al principio, por ejemplo: "_header.scss" y se invocan mediante la regla "@import"</p>
+                        <pre class="scss">
+                            // _header.scss
+
+                            header {
+                                background-color: red;
+                            }
+
+                            // _footer.scss
+
+                            footer {
+                                background-color: green;
+                            }
+
+                            // styles.scss
+
+                            @use "header"
+                            @use "footer"
+
+                        </pre>
+
+                        <h5>Mixins</h5>
+                        <p>Permite agrupar múltiples declaraciones que van a ser usadas por varios elementos</p>
+                        <pre class="scss">
+                            @mixin transform($property) {
+                                -webkit-transform: $property;
+                                -ms-transform: $property;
+                                transform: $property;
+                              }
+                              .box { @include transform(rotate(30deg)); }
+                        </pre>
+                        <pre class="css">
+                            .box {
+                                -webkit-transform: rotate(30deg);
+                                -ms-transform: rotate(30deg);
+                                transform: rotate(30deg);
+                              }
+                        </pre>
+
+                        <h5>Operadores</h5>
+                        <p>Permite hacer cálculos para definir valores en CSS</p>
+                        <pre class="scss">
+                            .container {
+                                width: 100%;
+                              }
+                              
+                              article[role="main"] {
+                                float: left;
+                                width: 600px / 960px * 100%;
+                              }
+                              
+                              aside[role="complementary"] {
+                                float: right;
+                                width: 300px / 960px * 100%;
+                              }
+                        </pre>
+                        <pre class="css">
+                            .container {
+                                width: 100%;
+                              }
+                              
+                              article[role="main"] {
+                                float: left;
+                                width: 62.5%;
+                              }
+                              
+                              aside[role="complementary"] {
+                                float: right;
+                                width: 31.25%;
+                              }
+                        </pre>
+
+                        <h5>Functions</h5>
+                        <p>Las funciones permiten definir operaciones complejas para valores de SASS</p>
+                        <pre class="scss">
+                            @function pow($base, $exponent) {
+                                $result: 1;
+                                @for $_ from 1 through $exponent {
+                                  $result: $result * $base;
+                                }
+                                @return $result;
+                              }
+                              
+                              .sidebar {
+                                float: left;
+                                margin-left: pow(4, 3) * 1px;
+                              }
+                        </pre>
+
+                        <pre class="css">
+                            .sidebar {
+                                float: left;
+                                margin-left: 64px;
+                              }
+                        </pre>
+
+                        <h5>Modules</h5>
+                        <p>Permite usar variables mixins y funciones de otro archivo SASS sin necesidad de incluirlo</p>
+                        <pre class="scss">
+                            // _base.scss
+                            $font-stack:    Helvetica, sans-serif;
+                            $primary-color: #333;
+
+                            body {
+                                font: 100% $font-stack;
+                                color: $primary-color;
+                            }
+
+                            // styles.scss
+                            @use 'base';
+
+                            .inverse {
+                                background-color: base.$primary-color;
+                                color: white;
+                            }
+                        </pre>
+
+                        <pre class="css">
+                            body {
+                                font: 100% Helvetica, sans-serif;
+                                color: #333;
+                              }
+                              
+                              .inverse {
+                                background-color: #333;
+                                color: white;
+                              }
+                        </pre>
+
+                        <h5>Extensiones y herencias</h5>
+                        <p>Permite extender y heredar propiedades CSS</p>
+                        <pre class="scss">
+                            /* This CSS will print because %message-shared is extended. */
+                            %message-shared {
+                                border: 1px solid #ccc;
+                                padding: 10px;
+                                color: #333;
+                            }
+
+                            // This CSS won't print because %equal-heights is never extended.
+                            %equal-heights {
+                                display: flex;
+                                flex-wrap: wrap;
+                            }
+
+                            .message {
+                                @extend %message-shared;
+                            }
+
+                            .success {
+                                @extend %message-shared;
+                                border-color: green;
+                            }
+
+                            .error {
+                                @extend %message-shared;
+                                border-color: red;
+                            }
+
+                            .warning {
+                                @extend %message-shared;
+                                border-color: yellow;
+                            }
+                        </pre>
+
+                        <pre class="css">
+                            /* This CSS will print because %message-shared is extended. */
+                            .message, .success, .error, .warning {
+                                border: 1px solid #ccc;
+                                padding: 10px;
+                                color: #333;
+                            }
+
+                            .success {
+                                border-color: green;
+                            }
+
+                            .error {
+                                border-color: red;
+                            }
+
+                            .warning {
+                                border-color: yellow;
+                            }
+                        </pre>
                 
         </main>
         <footer>

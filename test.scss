@@ -1,0 +1,14 @@
+@use 'base';
+
+
+@import "header";
+@import "footer";
+
+
+$primary-color: #ffffff;
+
+body {
+    color: $primary-color;
+    background-color: base.$primary-color;
+}
+

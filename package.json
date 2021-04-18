@@ -1,0 +1,22 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgalobart/cursoCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgalobart/cursoCSS/issues"
+  },
+  "homepage": "https://github.com/jgalobart/cursoCSS#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
